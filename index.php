@@ -40,34 +40,16 @@
 
     </form> 
 
-<?php
+    <?php
+        $user_id = $_POST["user_id"] ?? $_GET["user_id"] ?? "";
+        $name = $_POST["name"] ?? $_GET["name"] ?? "";
+        $surname = $_POST["surname"] ?? $_GET["surname"] ?? "";
+        $password = $_POST["password"] ?? $_GET["password"] ?? "";
+        $email = $_POST["email"] ?? $_GET["email"] ?? "";
+        $rol = $_POST["rol"] ?? $_GET["rol"] ?? "";
+        $active = isset($_POST["active"]) || isset($_GET["active"]) ? 1 : 0;
+    ?>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recuperar los datos enviados mediante POST
-    $user_id = $_POST["user_id"];
-    $name = $_POST["name"];
-    $surname = $_POST["surname"];
-    $password = $_POST["password"];
-    $email = $_POST["email"];
-    $rol = $_POST["rol"];
-    $active = isset($_POST["active"]) ? 1 : 0;
-
-    
-
-} elseif ($_SERVER["REQUEST_METHOD"] == "GET") {
-    // Recuperar los datos enviados mediante GET
-    $user_id = $_GET["user_id"];
-    $name = $_GET["name"];
-    $surname = $_GET["surname"];
-    $password = $_GET["password"];
-    $email = $_GET["email"];
-    $rol = $_GET["rol"];
-    $active = isset($_GET["active"]) ? 1 : 0;
-
-    
-}
-
-?>
 
 
 </body>
