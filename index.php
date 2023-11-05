@@ -5,8 +5,6 @@
     <title>Formulari d'Usuari</title>
 </head>
 
-
-
 <body>
     
     <h1>Formulari d'Usuari</h1>
@@ -39,11 +37,6 @@
         <input type="submit" value="Afegir Usuari">
 
     </form> 
-
-   
-
-
-
 
 </body>
 
