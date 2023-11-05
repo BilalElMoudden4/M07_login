@@ -40,15 +40,8 @@
 
     </form> 
 
-    <?php
-        $user_id = $_POST["user_id"] ?? $_GET["user_id"] ?? "";
-        $name = $_POST["name"] ?? $_GET["name"] ?? "";
-        $surname = $_POST["surname"] ?? $_GET["surname"] ?? "";
-        $password = $_POST["password"] ?? $_GET["password"] ?? "";
-        $email = $_POST["email"] ?? $_GET["email"] ?? "";
-        $rol = $_POST["rol"] ?? $_GET["rol"] ?? "";
-        $active = isset($_POST["active"]) || isset($_GET["active"]) ? 1 : 0;
-    ?>
+   
+
 
 
 
