@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5 M07 LOGIN</title>
+</head>
+<body>
+    <h1>Iniciar Sesión del usuario</h1>
+
+    <form method="POST" action="validar.php">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Introduce tu correo" name="email">
+        <br>
+        <br>
+        <label for="pwd">Contraseña</label>
+        <input type="password" placeholder="Introduce tu contraseña" name="pwd">
+        <br>
+        <br>
+        <input type="checkbox" name="activo" value="1" id="activo">
+        <label for="activo">Remember me</label>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+        <br>
+        <a href="http://localhost/M07-PHP/Practica4_M07_Login/">Crear usuario</a>
+    </form>
+</body>
+</html>
